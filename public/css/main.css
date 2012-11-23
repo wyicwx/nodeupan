@@ -1,0 +1,234 @@
+html {
+	background: #00b6e3 url(../images/bg.png) no-repeat center -400px;
+	overflow-x: hidden;
+	font:12px/1.125 Arial,Helvetica,sans-seri;
+}
+a {
+	cursor: pointer;
+}
+a:hover {
+	text-decoration: none;
+}
+a,p {
+	font-size: 14px;
+}
+input {
+	border: none;
+	outline: none;
+}
+table {
+	table-layout: fixed;
+	margin: 0 auto;
+	width: 80%;
+}
+th, tr, td {
+	overflow:hidden;
+	text-align: center;
+}
+#content {
+	width: 960px;
+	margin: 0 auto;
+	position: relative;
+}
+#main {
+	margin: auto 0;
+	width: 960px;
+	position: relative;
+	
+}
+.cloud-content {
+	height: 100%;
+	width: 350px;
+	padding-top: 50px;
+	margin: 0 auto;
+}
+
+/* head */
+#banner {
+	width: 465px;
+	height: 95px;
+	background: url(../images/title.png) no-repeat;
+	_background: url(../images/title_ie6.gif) no-repeat;
+	text-align: center;
+	margin: 0 auto;
+}
+#banner a {
+	color: white;
+	font-size: 36px;
+}
+#operate {
+	height: 120px;
+	width: 100%;
+	position: relative;
+	top: 0px;
+	left: 0px;
+	z-index: 10;
+	background: url(../images/icon.png) no-repeat 303px -96px;
+	_background: url(../images/icon_ie6.gif) no-repeat 303px -100px;
+}
+#cloud-upload, #cloud-key, #cloud-download {
+	display: block;
+	position: absolute;
+	height: 100px;
+	width: 105px;
+	top: 10px;
+	background: url(../images/icon.png) no-repeat;
+	_background: url(../images/icon_ie6.gif) no-repeat;
+}
+#cloud-upload {
+	left: 205px;
+	background-position: 0px 0px;
+}
+#cloud-key {
+	left: 430px;
+	background-position: -125px 0;
+}
+#cloud-download {
+	right: 200px;
+	background-position: -252px 0;
+}
+
+/* other */
+.upload-button {
+	display: block;
+	width: 133px;
+	height: 48px;
+	font-size: 18px;
+	margin: 0 auto;
+	color: white;
+	line-height: 45px;
+	text-align: center;
+	cursor: pointer;
+	background: url(../images/icon.png) no-repeat 0px -221px;
+	_background: url(../images/icon_ie6.gif) no-repeat 0px -221px;
+}
+.tips a{
+	color: #147ba2;
+}
+.input-text {
+	width: 180px;
+	text-align: center;
+	background: white url(../images/bg-form-field.gif) repeat-x scroll left top;
+	border: 1px solid #D5D5D5;
+	color: #333;
+	font-size: 13px;
+	padding: 6px;
+	border-radius: 4px 4px 4px 4px;
+	margin-right: 7px;
+	position: relative;
+}
+.input-btn {
+	height: 33px;
+	width: 33px;
+	line-height: 3000px;
+	margin-left: 10px;
+	vertical-align: top;
+	cursor: pointer;
+	background: url(../images/ico_warn.png) no-repeat -98px 4px;
+	_background: url(../images/ico_warn_ie6.gif) no-repeat -98px 4px;
+}
+/* copyright */
+#copyright {
+}
+#copyright p {
+	text-align:center;
+	color: white;
+}
+#copyright p a {
+	text-decoration: none;
+	color: white;
+}
+
+/* 操作框 */
+#cloud {
+	height: 320px;
+	background: url(../images/cloud.png) no-repeat center;
+	_background: url(../images/cloud_ie6.gif) no-repeat center;
+}
+#upload, #key, #download, #process, #result {
+	position: relative;
+}
+
+/* upload */
+#upload {
+	padding-top: 60px;
+}
+#upload p {
+	color: #00b6e3;
+	text-align: center;
+}
+#upload .btn-upload {
+	margin-bottom: 20px;
+}
+
+
+/* key */
+#key {
+	padding-top: 30px;
+}
+#key p {
+	font-size: 18px;
+	color: #00B6E3;
+	text-align: center;
+	margin-bottom: 10px;
+}
+#key p span {
+	color: #ff8a00;
+}
+#key .customkey {
+	text-align: center;
+}
+#key .customkey a {
+	font-size: 16px;
+	color: #147BA2;
+}
+#key .customkey .customform {
+	margin-top: 10px;
+}
+#key .upload-button {
+	margin-top: 10px;
+}
+
+/*process*/
+#process {
+	text-align: center;
+}
+#process p {
+	margin-top: 50px;
+	font-size: 16px;
+	color: #00B6E3;
+	text-align: center;
+}
+#process p a {
+	font-size: 16px;
+	color: #ff8a00;
+}
+
+/*download*/
+#download {
+	padding-top: 50px;
+	color: #00B6E3;
+	text-align: center;
+}
+#download p{
+	font-size: 20px;
+	margin-bottom: 10px;
+}
+#download .tips {
+    font-size: 14px;
+}
+#download .tips span {
+    color: #FF8A00;
+}
+
+/*result*/
+#result {
+	text-align: center;
+}
+#result h2{
+	color: #00B6E3;
+	font-size: 18px;
+}
+#result table {
+	text-align: left;
+}

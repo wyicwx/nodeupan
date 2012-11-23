@@ -1,0 +1,144 @@
+﻿/*head*/
+body{background:#F5F5F5}
+.all{width:780px;margin:auto;}
+.head{width:100%;height:36px;background:#50AFAB;position:relative;}
+.menu{width:280px;height:36px;position:absolute;right:0px;padding-top:8px;}
+.menu a{float:left;font:bold 14px Microsoft Yahei;margin-left:12px;height:18px;color:#fff;}
+.menu a:hover{color:#E7DE92;}
+.textright{text-align:right;}
+.textleft{text-align:left;}
+.announce{width:815px;height:120px; margin:12px auto 10px auto;position:relative;}
+.announce img{position:absolute;left:0px; top:0px;}
+h1{font:22px  Microsoft Yahei;color:#686868;position:absolute;left:255px;top:41px;padding:0px;margin:0px;text-shadow:#ccc 0px 0px 1px; }
+h2{font:16px Microsoft Yahei;color:#686868;position:absolute;left:255px;top:78px; padding:0px;margin:0px;}
+
+/*center*/
+.center{width:720px; height:250px;margin-left:30px;position:relative;overflow:hidden;}
+.inside{position:absolute;width:1440px; height:300px;}
+.inside a{position:absolute;}
+#goup{left:0px;top:84px;width:60px;height:60px;background:url(../image/goUp.gif) left top  no-repeat;}
+#godown{right:0px;top:84px;width:60px;height:60px;background:url(../image/goDown.gif) right top  no-repeat;}
+#goup:hover{background:url(../image/goUp2.gif) left top no-repeat;}
+#godown:hover{background:url(../image/goDown2.gif) right top  no-repeat;}
+.goUpMsg{position:absolute;width:50px;font:16px Microsoft Yahei;color:#A7A7A7;left:23px;top:87px;}
+.goDownMsg{position:absolute;width:50px;font:16px Microsoft Yahei;color:#A7A7A7;right:23px;top:87px;}
+.downAttention{position:absolute;width:440px;font:14px Microsoft Yahei;color:#393939;left:148px;top:217px;text-align:center}
+.upAttention{position:absolute;width:440px;font:14px Microsoft Yahei;color:#393939;right:148px;top:217px;text-align:center}
+.upAttention a{color:#6094FF;}
+.upAttention a:hover{color:#3373FF;}
+.centerbox{position:absolute;width:500px;height:194px;border:dashed 3px #666666;}
+.downbox{left:107px;}
+.upbox{right:107px;}
+/**/
+.downloadspace{width:300px;height:120px;margin-left:113px;margin-top:45px;;}
+.downloadspace span{position:relative; top:3px; font:18px MIcrosoft YaHei;color:#393939;line-height:18px;}
+.downloadspace input{font:Microsoft Yahei;line-height:14px;}
+.line1{height:70px;}
+.line1 span{float:left;height:40px;padding-top:5px;}
+.downtext{width:195px;height:32px;background:url(../image/inputBox.gif) no-repeat;border:none;padding-left:10px;outline:none;margin-left:28px;
+    font:16px;_padding-top:10px;*padding-top:10px;line-height:16px;_float:left;}
+.downbutton{width:195px;height:37px;background:url(../image/buttondown.gif) no-repeat;border:none;outline:none;margin-left:44px;
+					font:bold 16px Microsoft Yahei;color:#fff;cursor:pointer;_padding-top:2px;}
+.downbutton:hover{background:url(../image/buttondown2.gif) no-repeat;color:#E7DE92;}
+
+
+/**/
+.upspace{margin-left:86px;margin-top:55px;width:340px;height:88px;position:relative;}
+.upbutton{width:195px;height:37px;background:url(../image/buttonup.gif) no-repeat;border:none;outline:none;left:64px;
+					font:bold 16px Microsoft Yahei;color:#fff;position:absolute;}
+.upbutton:hover{background:url(../image/buttonup2.gif) no-repeat;color:#E7DE92;}
+.upspace span{position:absolute;bottom:0px;left:0px;font:16px Microsoft Yahei;width:340px;}
+
+/**/
+.recentFiles{width:540px;margin:0 auto;font:13px Microsoft Yahei;}
+.fileDetail{width:300px;margin: 0 auto;}
+
+.footer{position:relative;width:780px;height:30px;margin-left:auto;font:12px simsum;text-align:center;}
+
+/*.company{position:absolute;width:100px;left:340px;bottom:10px;}*/
+.company {
+    text-align:center;
+}
+
+
+
+.dragOver{
+	border:solid;
+}
+
+.ui-progressbar-value {
+	background-image:url(../images/pbar-ani.gif);
+}
+
+* {
+} /* for IE */
+
+*:focus {
+	outline-style: none;
+} /* for Firefox */ 
+.upload-msg{
+    text-align:center;
+    margin:40px auto;
+    width:340px;
+    position:relative;
+}
+.upload-msg p{
+    margin-bottom:10px;
+}
+iframe{
+    display:none;
+}
+
+#draglayer{
+    position:absolute;
+    left:0;
+    width:100%;
+    height:120%;
+    z-index:9999;
+    background:#000;
+    opacity:.8;
+}
+
+#code{
+    color:red;
+}
+
+#progressbar{
+    width:208px;
+    margin:0 auto;
+}
+#drop{
+    color:#fff;
+    line-height:500px;
+    font-size:50px;
+    width:400px;
+    margin:auto;
+}
+#uploadfile{
+    position:absolute;
+    left:-15px;
+    height:40px;
+    width:200px;
+    z-index:9999;
+    filter:alpha(opacity=0);
+    opacity:0;
+}
+
+.all{
+   text-shadow:0 1px 0 #FFF;
+}
+td a {
+    color: #3373FF;
+}
+
+
+
+
+
+
+
+
+
+
+
+

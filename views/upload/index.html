@@ -1,0 +1,158 @@
+<!doctype html>
+<html>
+	<head>
+		<title><%= config.siteName %></title>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<link rel="stylesheet" href="/css/base.css" />
+		<link rel="stylesheet" href="/css/main.css" />
+		<!-- <link rel="stylesheet" href="js/grumble/css/grumble.min.css"> -->
+		<script type="text/javascript" src="/js/store.min.js"></script>
+		<script type="text/javascript" src="/js/jquery.min.js"></script>
+		<script type="text/javascript" src="/js/ajaxupload.js"></script>
+		<!-- <script type="text/javascript" src="js/grumble/js/jquery.grumble.min.js"></script> -->
+		<script type="text/javascript" src="/js/main.js"></script>
+
+	</head>
+	<body>
+		<!-- content -->
+		<div id="content">
+			<div id="head">
+				<div id="banner">
+					<h1><a href="/" title="<%= config.siteName %>"><%= config.siteName %></a></h1>
+				</div>
+			</div>
+
+			<!-- main -->
+			<div id="main">
+				<div class="j-main" style="position:relative">
+					<!-- operate -->
+					<div id="operate">
+						<a id="cloud-upload" href="javascript:void(0)"></a>
+						<a id="cloud-key" href="javascript:void(0)"></a>
+						<a id="cloud-download" href="javascript:void(0)"></a>
+					</div>
+					<!-- /operate -->
+
+					<div id="cloud">
+						<!-- cloud-content -->
+						<div class="cloud-content" id="cloudcontent">
+							<!-- upload -->
+							<div id="upload" class="fn-hidel j-getDom">
+								<a class="upload-button j-uploadbtn" href="javascript:void(0)">上传文件</a>
+								<p>
+									<br>
+									无需注册，上传文件，得到提取码，凭提取码下载文件<br>
+									<span class="j-drapTips fn-hide">可以直接把文件拖到这里上传哦！<br></span>
+									上传文件最大<%= config.uploadFileSize %>M！！
+								</p>
+								<p class="tips">
+									<br>
+									<a href="javascript:void(0)" class="j-godownload">
+										已有提取码？去下载
+									</a>&nbsp;&nbsp;&nbsp;
+									<a href="javascript:void(0)" class="j-recentUpload">
+										查看本机最近上传
+									</a>
+								</p>
+							</div>
+							<!-- /upload -->
+
+							<!-- key -->
+							<div id="key" class="fn-hide j-getDom">
+								<p>
+									恭喜您上传成功！！<br>
+									这个文件的提取码为：<span class="j-keycode"></span><br>
+									亲，提取码在只保存<%= config.deleteTime %>天！
+								</p>
+								
+								<div class="customkey">
+									<a id="customkeybtn" class="j-customcode" href="javascript:void(0)">
+										点我自定义提取码哦 ^_^
+									</a>
+									<div class="customform fn-hide j-customcodeform">
+										<form action="/upload/customCode" method="POST" class="j-customcodesubmit">
+                                            <input class="input-text j-custominput" name="code" type="text"><br/>
+											<input class="upload-button" type="submit" value="修改">
+										</form>
+									</div>
+									
+									
+								</div>
+								<a class="upload-button j-upload-again" href="javascript:void(0)">继续上传</a>
+							</div>
+							<!-- /key -->
+
+							<!-- download -->
+							<div id="download" class="fn-hide j-getDom">
+								<p>
+									请输入提取码
+								</p>
+								<form action="/download/download/" method="POST">
+									<input class="input-text" name="code" type="text">
+									<div>&nbsp;</div>
+									<input class="upload-button" type="submit" value="点击提取">
+								</form>
+                                <p class="tips">可以直接在浏览器里面输入<br><%= config.siteURL %>/d/<span>提取码</span><br>提取文件</p>
+							</div>
+							<!-- /download -->
+
+							<!-- process -->
+							<div id="process" class="fn-hide j-getDom">
+								<p>
+									<span>uploading.....</span>
+									<br>
+									<br>
+									<span class="j-timeTooLong fn-hide">好像有点傲骄哦！<a href="/">点击</a>刷新重新上传试试吧！</span>
+									<br>
+									<img src="images/process.gif" alt="上传中...请稍等！">
+									<br>
+									上传什么的最讨厌了！！！
+								</p>
+							</div>
+							<!-- /process -->
+
+							<!-- result -->
+							<div id="result" class="fn-hide j-getDom">
+								<h2>本机最近上传文件</h2>
+
+								<table cellpadding="0" cellspacing="0">
+									<thead>
+										<tr>
+	                    					<th width="50%">文件名</th><th width="50%">提取码</th>
+	                    				</tr> 
+									</thead>
+	                    			<tbody class="j-recoder">
+	                				</tbody>
+	                			</table>
+							</div>
+							<!-- /result -->
+
+						</div>
+						<!-- /cloud-content -->
+
+						
+					</div>
+
+					<!-- copyright -->
+					<div id="copyright">
+						<p>Copyright&nbsp;&copy;
+							<a href="http://online.hfut.edu.cn" target="_blank">大学生发展网络教育中心</a>&nbsp;Power&nbsp;by&nbsp;
+							<a href="http://weibo.com/236008243" target="_blank">小了个枫</a>&nbsp;Design&nbsp;by&nbsp;
+                            <a href="http://weibo.com/yunuoxuan" target="_blank">小白没有吃</a>&nbsp;
+                            <a href="http://weibo.com/u/2307523172" target="_blank">联系我们</a>&nbsp;<br>
+                            <%= filedata %> 
+                            <!-- <a href="/upload/help">查看帮助</a> -->
+
+						</p>
+					</div>
+					<!-- /copyright -->
+				</div>
+			</div>
+			<!-- /main -->
+
+			
+		</div>
+		<!-- /content -->
+        <script type="text/javascript" src="http://js.tongji.linezing.com/2885476/tongji.js"></script><noscript><a href="http://www.linezing.com"><img src="http://img.tongji.linezing.com/2885476/tongji.gif"/></a></noscript>
+	</body>
+</html>

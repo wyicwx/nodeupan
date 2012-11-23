@@ -1,0 +1,20 @@
+{
+	"name" : "nodeupan",
+	"version" : "0.0.1",
+	"author": {
+		"name": "Chen Weixin",
+		"email": "wyicwx@gmail.com",
+		"url": "http://weibo.com/236008243"
+	},
+	"description" : "基于node.js的云u盘应用",
+	"contributors" : [],
+	"main" : "main",
+	"keywords" : [
+		"云u盘"
+	],
+	"license" : "MIT",
+	"repository": "git://github.com/wyicwx/nodeupan",
+	"engine" : {
+		"node":">=0.4"
+	}
+}
